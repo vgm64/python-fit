@@ -18,7 +18,7 @@ setup(
     keywords = "fitting curve",
     url = "https://github.com/vgm64/python-fit",
     py_modules = ['fit'],
-    long_description=read('README.md'),
+    long_description=read('README.rst'),
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Topic :: Scientific/Engineering", 
