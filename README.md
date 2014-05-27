@@ -45,6 +45,16 @@ Fit with built in functions:
     plot(xf, yf, 'r-', label='Fit')
     legend() 
 
+Functions available:
+
+    Gaussian curve
+    Exponential curve
+    Double exponential
+    Polynomials for degrees 0-20
+    Power-Law
+    Crystal Ball
+    ... and more!
+
 
 Fit with user defined functions:
 
