@@ -17,7 +17,7 @@ setup(
     license = "MIT",
     keywords = "fitting curve",
     url = "https://github.com/vgm64/python-fit",
-    packages=['fit', 'tests'],
+    packages=['fit'],
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 5 - Production/Stable",
