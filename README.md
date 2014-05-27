@@ -42,7 +42,7 @@ Fit with built in functions:
     print "N:    %.2f +/- %.3f" % (params[2], err[2])
     
     plot(x,y, 'bo', label='Data')
-    plot(xf, xf, 'r-', label='Fit')
+    plot(xf, yf, 'r-', label='Fit')
     legend() 
 
 
@@ -65,19 +65,28 @@ Fit with user defined functions:
     plot(xf,yf, 'r-', label='Fit')
     legend()
 
-Even though `example_function` is defined by the user, python-fit will guess parameters. The median value of the xdata will be used. If the fit fails, then provide some decent parameters as a first guess:
+Even though `example_function` is defined by the user, python-fit will guess parameters (the median value of the xdata for all parameters; it works if x and y are on similar scales). If the fit fails, then provide some decent parameters as a first guess:
 
     results = fit.fit(example_function, x, y, default_pars = [1, 12, 10, 1, 1, 1])
+    plot(results[0][0], results[0][1], 'r--')
 
 Fit a sub-range:
 
+    clf()
     results = fit.fit(fit.gaus, x, y, data_range=[0, 23])
+    plot(results[0][0], results[0][1], 'r-.')
 
 Define your own weights to prevent outliers from wreaking havoc on your fit:
 
+    
+    # Create some outliers.
     y_outlier = y + (random.rand(len(y))**20)*3
+    # I'll just make a cut and say outliers are above 0.55
     weights = 1. * (y_outlier < .55)
     results = fit.fit(example_function, x, y_outlier, we=weights)
+    clf()
+    plot(x,y_outlier, 'bo', label='Data w/ Outliers')
+    plot(results[0][0], results[0][1], 'r-.', label='Fit around outliers')
 
 
 
