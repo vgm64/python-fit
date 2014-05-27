@@ -10,19 +10,22 @@ def read(fname):
 
 setup(
     name = "python-fit",
-    version = "1.0",
+    version = "1.0.0",
     author = "Michael Woods",
     author_email = "physicsmichael@gmail.com",
     description = ("A python module using scipy's orthogonal distance regression that makes fitting data easy."),
     license = "MIT",
     keywords = "fitting curve",
     url = "https://github.com/vgm64/python-fit",
-    packages=['fit'],
+    py_modules = ['fit'],
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Topic :: Scientific/Engineering", 
         "Topic :: Utilities",
+        "Operating System :: OS Independent",
+        "Intended Audience :: Science/Research",
+        "Programming Language :: Python",
         "License :: OSI Approved :: MIT License"
     ],
 )
