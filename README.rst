@@ -33,7 +33,7 @@ Fit with built in functions:
     from pylab import *
     ion()
     import fit
-    from numpy import random, exp
+    from numpy import random, exp, arange
     random.seed(0)
 
     # Create some data to fit
