@@ -1,14 +1,13 @@
 python-fit
 ==========
 
-The python-fit module is designed for people who need to fit data
-frequently and quickly. The module is not designed for huge amounts of
-control over the minimization process but rather tries to make fitting
-data simple and painless. If you want to fit data several times a day,
-every day, and you really just want to see if the fit you've made looks
-good against your data, check out this software. If you want one very
-statistically aware and neurotically controlled fit, you might consider
-looking elsewhere.
+The python-fit module is designed for people who need to fit data frequently
+and quickly. The module is not designed for huge amounts of control over the
+minimization process but rather tries to make fitting data simple and painless.
+If you fit two-dimensional data several times a day, every day, and you really
+just want to see if the fit you've made looks good against your data, check out
+this software. If you want one very statistically aware and neurotically
+controlled fit, you might consider looking elsewhere.
 
 With python-fit, you get work done.
 
