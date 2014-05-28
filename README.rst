@@ -45,9 +45,9 @@ Fit with built in functions:
     # No need to provide first guess at parameters for fit.gaus
     (xf, yf), params, err, chi = fit.fit(fit.gaus, x,y)
 
-    print "N:    %.2f +/- %.3f" % (params[0], err[0])
-    print "N:    %.2f +/- %.3f" % (params[1], err[1])
-    print "N:    %.2f +/- %.3f" % (params[2], err[2])
+    print "N:     %.2f +/- %.3f" % (params[0], err[0])
+    print "mu:    %.2f +/- %.3f" % (params[1], err[1])
+    print "sigma: %.2f +/- %.3f" % (params[2], err[2])
 
     plot(x,y, 'bo', label='Data')
     plot(xf, yf, 'r-', label='Fit')
