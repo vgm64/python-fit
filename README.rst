@@ -16,6 +16,8 @@ just want to see if the fit you've made looks good against your data, check out
 this software. If you want one very statistically aware and neurotically
 controlled fit, you might consider looking elsewhere (give zunzun_ a look).
 
+.. _zunzun: http://www.zunzun.com/
+
 With python-fit, you get work done.
 
 Features
