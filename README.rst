@@ -1,13 +1,20 @@
 python-fit
 ==========
 
+.. image:: https://pypip.in/download/python-fit/badge.png
+    :target: https://pypi.python.org/pypi/python-fit/
+    :alt: Downloads
+.. image:: https://pypip.in/version/python-fit/badge.png
+    :target: https://pypi.python.org/pypi/python-fit/
+    :alt: Latest Version
+
 The python-fit module is designed for people who need to fit data frequently
 and quickly. The module is not designed for huge amounts of control over the
 minimization process but rather tries to make fitting data simple and painless.
 If you fit two-dimensional data several times a day, every day, and you really
 just want to see if the fit you've made looks good against your data, check out
 this software. If you want one very statistically aware and neurotically
-controlled fit, you might consider looking elsewhere.
+controlled fit, you might consider looking elsewhere (give zunzun_ a look).
 
 With python-fit, you get work done.
 
