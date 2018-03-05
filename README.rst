@@ -1,10 +1,10 @@
 python-fit
 ==========
 
-.. image:: https://pypip.in/download/python-fit/badge.png
+.. image:: https://img.shields.io/pypi/dm/python-fit.svg
     :target: https://pypi.python.org/pypi/python-fit/
     :alt: Downloads
-.. image:: https://pypip.in/version/python-fit/badge.png
+.. image:: https://img.shields.io/pypi/v/python-fit.svg
     :target: https://pypi.python.org/pypi/python-fit/
     :alt: Latest Version
 
