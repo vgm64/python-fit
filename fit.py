@@ -44,6 +44,8 @@ plot(xf,yf)
 =====================================================================
 
 """
+from __future__ import print_function
+
 from scipy.odr import odrpack as odr
 from scipy.odr import models
 
@@ -257,7 +259,7 @@ def fit(func, x,y, default_pars=None, data_range=None, we=None, verbose=False, i
   if verbose: fit.pprint()
 
   if fit.stopreason[0] == 'Iteration limit reached':
-    print '(WWW) poly_lsq: Iteration limit reached, result not reliable!'
+    print('(WWW) poly_lsq: Iteration limit reached, result not reliable!')
 
   # Results and errors
   coeff = fit.beta
@@ -281,7 +283,11 @@ def fit(func, x,y, default_pars=None, data_range=None, we=None, verbose=False, i
 
 def polN_dec(func):
   """ Polynomial decorator """
-  degree = int(func.func_name.replace("pol",""))
+  try:
+      degree = int(func.__name__.replace("pol",""))
+  except:
+      # Don't know if this is needed for Python 2 compatibility, but just adding it.
+      degree = int(func.func_name.replace("pol",""))
   def polN(*args):
     params, x = args
     if len(params) != degree+1:

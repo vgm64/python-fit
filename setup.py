@@ -10,7 +10,7 @@ def read(fname):
 
 setup(
     name = "python-fit",
-    version = "1.0.0",
+    version = "1.0.1",
     author = "Michael Woods",
     author_email = "physicsmichael@gmail.com",
     description = ("A python module using scipy's orthogonal distance regression that makes fitting data easy."),
